@@ -3,165 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portpolio</title>
+    <style>
+        body {
+            background-color: #dae5e2;
+        }
+        .bodyDiv {
+            font-family: "Nanum Gothic", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .accordion {
+            display: inline-block;
+            color: #000;
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            text-align: left;
+            justify-content: center; 
+            border: none;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #c2e5db;
+        }
+
+        .panel {
+            display: none;
+            overflow: hidden;
+        }
+
+        .fa-brands {
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .fa-brands:hover {
+            color: #fff;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
-<!-- 
-                          ........:oo:........
-                       o//ssssssssyhhysssss+////o                   .'''''''''''''''''.
-                 mddmmm/::ddddddddddddddmmmyss::/mmN               |   PARTY OR DIE   |
-                 o..+oodddmmmhhhhhhhhhhhdmmmmmdddooy               | ,................'
-              h::oyyhddmmm+++///////////++++++mmmddy::s            |/
-           Nyyo[[sddhyyyyy::::::::::::::::::::yyymmh//oyym
-           h..:oohmm+:://///::::////////////////+mmmmms..sNN
-           m++sddmmm+::hddhhy::+ddddddddddddddhhhmmmmmdhh+++d
-        Nsssyyhmmhssooodmmhhh::+mmdyyyyyyyyddddddmmmmmmmmo::d
-      mmd../mmmmmo::shhdmmhhh::+mmhooooooooyhhmmmmmmmmmmmyssdmm
-      +++++smmdddo::///dmmhhh::+mmhooooooooooommmmmddddmmmdd/++m
-      ``+hhhmmhoo/:::::oooooossymmhooooooooyyymmdoooooydddmmo//N
-      ++:mmmmmy:::::::::::::/yyhmmhooooooooyhhmmd:::::+yyhmmyssddd
-      ooommmmmy:::::::::::::://ommhooooooooooommd:::::://shhdmm+..
-      yyhmmh++/::::::::::::::::+mmhooooooooyyymmd::::::::/++hmm+//
-      dddmmh++/::::::::::::::::+mmhooooooooyhhddh:::::::::::hmmysshhd
-      mmmmmdhhs::::::::::::::::+mmhoooooooohhhhhy:::::::::::hmmhhh``+
-      mmmmmh++/::::::::::::::::+mmdhhsooooodmm++/:::::::::::hmmsss``+
-      dddmmhoo+::::::::::::::::+dddddyssyyydmm::::::::::::::hmmsoo++o
-      dddmmdhho::::::::::::::::+hhdmmddddmmmmm::::::::::::::hmmsooNNN
-      mmmmmh///::::::::::::::::+hhdmmmmmmmmddd::::::::::::::hmmsoo++/
-      yyhmmdss+::::::::::::::::/ooydddmmmmmsoo::::::::::::::yddhyy::+
-      ++ommmmmy:::::::::::::::::::ohhdmmddd/::::::::::::::::shhdmmsssNNNmmN
-      ..+mmmmmy:::::::::::::::::::://shh+//:::::::::::::::::://dmmmmdoo+..o
-      ``+dddmmhss+:::::::::::::::::::+++/::::::::::::::::::::::ooodddhhysshNNy++m
-      ``+hhdmmdhhs///:::::::::::::::::::::::::::::::::::::::::::::yyymmmmmmmmo++hNNmdd
-      ``+hhdmmdhhhhh+:::::::::::::::::::::::::::::::::::::::::::::::/hhhhhdmmmmmsoo...
-      ``+ddmmmdhhhhhyyyyyyyyyyyo:::::::::::::::::::::::::::::::::::::+++++sdddmmdhhsss//+
-      ``+mmmmmhsshhhhhhhhhhhhhhy++/:::::::::::::::::::::::::::::::::::::::+ssyyydmmddd///hhd
-      ``+mmmmmy::shhhhhhhhhhhhhhhhs:::::::::::::::::::::::::::::::::::::::::::::ymmmmmmmh../
-      ``+mmmmmy:://////////////ohhhyy+::::::::::::::::::::::::::::::::::::::::::///hddmmmhhs++s
-      ``+mmmmmhssssssssssssssssydddddysssssssssssssssssssssssssssssssssssssssssssssdddmmmmmy::s
-      ``+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhooh -->
-
-      <tbody><tr>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-        <td>
-            <h2>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PARTY OR DIE</h2>
-        </td>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-        </td>
-        <td>
-            <img src="https://cultofthepartyparrot.com/parrots/parrot.gif">
-            <br>
-        </td>
-      </tr>
-    </tbody>
+    <div id="bodyDiv" class="bodyDiv">
 
 
+        <h1 style="text-align:center; padding-top:30px;">저를 소개합니다!</h1>
+        <div style="display:flex;">
+            <div class="imgDiv" style="text-align: right; width: 50%; margin-right: 50px;">
+                <img src="myPhoto.jpg" alt="Image description" style="max-height: 450px; display:inline-block; text-align: center;">
+            </div>
+            <div class="introDiv" style="display:inline-block; width: 50%; margin-left: 30px;">
+                <h2>김정인</h2>
+                <p>1998년 10월 11일생</p>
+                <p>우송대학교 외식조리전공 졸업 후 취업...그러나</p>
+                <p>부상으로 인해 퇴사 후</p>
+                <h3>[계룡건설] 빅데이터 기반 Green Tech SW개발자 7기 수료 </h3>
 
-
-
-    <tr>
-        <img src="https://cultofthepartyparrot.com/parrots/wave1parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave2parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave3parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave4parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave5parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave6parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave7parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave8parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave9parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave1parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave2parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave3parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave4parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave5parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave6parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave7parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave8parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/wave9parrot.gif">
+                <br>
+                <h2>제 특징을 소개하자면...</h2>
+                <strong>새로운 걸 배우는 것을 즐깁니다.</strong>
+                <br><br>
+                <strong>늘 더 좋은 방법을 찾습니다.</strong>
+                <br><br>
+                <strong>끈기와 책임감을 가지고 맡은 일은 끝까지 마무리합니다.</strong>
+            </div>
+        </div>
         <br>
-    </tr>
-    <tr>
-        <pre>
-                        ........:oo:........
-                        o//ssssssssyhhysssss+////o                   .'''''''''''''''''.
-                mddmmm/::ddddddddddddddmmmyss::/mmN               |   PARTY OR DIE   |
-                o..+oodddmmmhhhhhhhhhhhdmmmmmdddooy               | ,................'
-            h::oyyhddmmm+++///////////++++++mmmddy::s            |/
-            Nyyo[[sddhyyyyy::::::::::::::::::::yyymmh//oyym
-            h..:oohmm+:://///::::////////////////+mmmmms..sNN
-            m++sddmmm+::hddhhy::+ddddddddddddddhhhmmmmmdhh+++d
-            Nsssyyhmmhssooodmmhhh::+mmdyyyyyyyyddddddmmmmmmmmo::d
-            mmd../mmmmmo::shhdmmhhh::+mmhooooooooyhhmmmmmmmmmmmyssdmm
-            +++++smmdddo::///dmmhhh::+mmhooooooooooommmmmddddmmmdd/++m
-            ``+hhhmmhoo/:::::oooooossymmhooooooooyyymmdoooooydddmmo//N
-            ++:mmmmmy:::::::::::::/yyhmmhooooooooyhhmmd:::::+yyhmmyssddd
-            ooommmmmy:::::::::::::://ommhooooooooooommd:::::://shhdmm+..
-            yyhmmh++/::::::::::::::::+mmhooooooooyyymmd::::::::/++hmm+//
-            dddmmh++/::::::::::::::::+mmhooooooooyhhddh:::::::::::hmmysshhd
-            mmmmmdhhs::::::::::::::::+mmhoooooooohhhhhy:::::::::::hmmhhh``+
-            mmmmmh++/::::::::::::::::+mmdhhsooooodmm++/:::::::::::hmmsss``+
-            dddmmhoo+::::::::::::::::+dddddyssyyydmm::::::::::::::hmmsoo++o
-            dddmmdhho::::::::::::::::+hhdmmddddmmmmm::::::::::::::hmmsooNNN
-            mmmmmh///::::::::::::::::+hhdmmmmmmmmddd::::::::::::::hmmsoo++/
-            yyhmmdss+::::::::::::::::/ooydddmmmmmsoo::::::::::::::yddhyy::+
-            ++ommmmmy:::::::::::::::::::ohhdmmddd/::::::::::::::::shhdmmsssNNNmmN
-            ..+mmmmmy:::::::::::::::::::://shh+//:::::::::::::::::://dmmmmdoo+..o
-            ``+dddmmhss+:::::::::::::::::::+++/::::::::::::::::::::::ooodddhhysshNNy++m
-            ``+hhdmmdhhs///:::::::::::::::::::::::::::::::::::::::::::::yyymmmmmmmmo++hNNmdd
-            ``+hhdmmdhhhhh+:::::::::::::::::::::::::::::::::::::::::::::::/hhhhhdmmmmmsoo...
-            ``+ddmmmdhhhhhyyyyyyyyyyyo:::::::::::::::::::::::::::::::::::::+++++sdddmmdhhsss//+
-            ``+mmmmmhsshhhhhhhhhhhhhhy++/:::::::::::::::::::::::::::::::::::::::+ssyyydmmddd///hhd
-            ``+mmmmmy::shhhhhhhhhhhhhhhhs:::::::::::::::::::::::::::::::::::::::::::::ymmmmmmmh../
-            ``+mmmmmy:://////////////ohhhyy+::::::::::::::::::::::::::::::::::::::::::///hddmmmhhs++s
-            ``+mmmmmhssssssssssssssssydddddysssssssssssssssssssssssssssssssssssssssssssssdddmmmmmy::s
-            ``+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhooh
-        </pre>
-    </tr>
-   <tr>
-        <img src="https://cultofthepartyparrot.com/parrots/hd/parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/hd/reverseparrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/hd/parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/hd/reverseparrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/hd/parrot.gif">
-        <img src="https://cultofthepartyparrot.com/parrots/hd/reverseparrot.gif">
+        <div id="projDiv" style="margin-left: 30px; text-align: center;">  
+            <h2>주요 프로젝트</h2>
 
-   </tr>
+            <div style="text-align: center;">
+                <a href="#todayDiv">오늘의 도시락</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#pokemonDiv">포켓몬으로 배우는 일본어</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#todayDiv">Watt's Up?</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#todayDiv">모두가 농부</a>
+            </div>
+        </div>
+            
+        <br><br><br>
+        <div id="todayDiv" style="text-align: center;">
+            <h2>오늘의 도시락</h2>
+            <img src="today.png" alt="오늘의 도시락" style="max-width: 850px; display:inline-block; text-align: center;">
+            
+            <p><strong>가지고 있는 재료 기반으로 원하는 레시피를 검색할 수 있는 웹</strong> &nbsp;
+                <i class="fa-brands fa-youtube" onclick="window.location.href='https://youtu.be/7gYX5p8LsUI'"></i>&nbsp;
+                <i class="fa-brands fa-github"></i>
+            </p>
+            
+            <br>
+            <h3>핵심 특징</h3>
+            <p>
+                타 사이트 : 여러개의 재료를 검색할 시 <strong>하나만 일치해도 모두 출력함</strong> (OR)
+            <br>
+            오늘의 도시락 : 여러개의 재료를 검색할 시 <strong>그 재료들이 모두 포함되는 레시피가 출력됨</strong> (AND) 
+            </p>
+            <br>
+            <h3>힘들었던 점</h3>
+            <p>입력한 재료들을 모두 포함하는 레시피를 조회하기 위한 쿼리를 작성하는데 오랜 시간이 걸림</p>
+            <br>
+            
+            <div class="accordion"><strong>⮟ 실패 예시</strong></div>
+            <div class="panel">
+                <p>
+                    <strong>OR</strong> - 기존의 웹들에서 주로 채용한 방법이라고 생각됨. 재료 중 하나라도 포함되면 출력됨
+                    <p> 
+                        ex) 마늘, 양파 검색 시 재료 중 마늘, 양파 하나라도 들어간 레시피 전부 출력</p>
+                    <br>
+                    <strong>AND</strong> - 하나의 컬럼에 두개의 조건을 AND로 걸면 두개의 재료가 동시에 포함된 컬럼만 조회되기때문에 결과가 나오지않음
+                    <p> 
+                        ex) 마늘, 양파 검색 시 <strong>재료 하나</strong>에 마늘, 양파가 모두 들어간 레시피 출력 </p>
+                    <br>
+                    <strong>HAVING</strong> - 비슷한 결과가 나오는 듯 싶으나, 똑같은 재료가 다른 형태로 들어가는 경우, 원하는 결과가 다르게나옴
+                    <p> 
+                        ex) 마늘, 양파 검색 시 마늘, 양파가 1번씩 / 마늘만 2번 / 양파만 2번 들어간 레시피만 출력 </p>
+                </p>
+            </div>
+            <br><br><br>
+            <div class="accordion"><strong>⮟ 해결법</strong></div>
+            <div class="panel">
+                <p>
+                    <strong>JOIN & AND </strong> - and로 조건을 건 테이블을 join하여 추가해서 두 조건을 모두 만족하는 레시피를 출력
+                    <p>
+                    ex) JOIN recipe_ingr e1 ON a.recipe_id = e1.recipe_id AND e1.ingr_name LIKE '마늘'
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        JOIN recipe_ingr e2 ON a.recipe_id = e2.recipe_id AND e2.ingr_name LIKE '양파'
+                </p>
+                </p>
+            </div>
+            <br><br><br>                    
+            <a href="#bodyDiv">[주요 프로젝트]</a>
+        </div>
+        
+
+
+        <br><br><br>
+        <div id="pokemonDiv" style="text-align: center;">
+            <h2>포켓몬으로 배우는 일본어</h2>
+            <img src="pokemon.png" alt="오늘의 도시락" style="max-width: 850px; display:inline-block; text-align: center;">
+            <p><strong>포켓몬 이름의 유래를 통해 일본어 단어를 배울수 있는 웹</strong> &nbsp;
+                <i class="fa-brands fa-youtube" onclick="window.location.href='https://youtu.be/nnIyla7yFas'"></i>&nbsp;
+                <i class="fa-brands fa-github"></i>
+            </p>
+            
+            <br>
+            <strong>핵심 특징</strong>
+            <p>포켓몬의 특징을 살린 다양한 디자인과 효과들로 이루어진 UI들</p>
+            <br>
+            <strong>힘들었던 점</strong>
+            <p>
+                html이 아닌 다양한 방식으로 작성된 코드를 html로 바꾸는 과정이 매우 어려웠음 (Vue.js로 작성된 메인페이지를 html로 수정)
+                <br>
+                특히 css부분에서 <strong>보이는 범위와 실제 범위가 달라</strong> 클릭 등의 이벤트를 넣기 힘들었음.
+                <br>그러나 여러차례의 실험을 통해 범위를 수정해내 원하는 이벤트를 무사히 추가함.
+                <br><br>
+                띄어쓰기와 동음이의어가 많은 일본어의 특성 상 <strong>자연어 처리가 어려웠음</strong>
+                <br>
+                이는 <strong>다양한 라이브러리을 병행</strong>해서 사용하여 만족스러운 결과를 얻어냈음
+            </p>
+            <br> 
+            <a href="#bodyDiv">[주요 프로젝트]</a>  
+        </div>
+
+
+
+        <br><br><br>
+        <div id="wattDiv" style="text-align: center;">
+            <h2>Watt's Up?</h2>
+            <img src="wattup.png" alt="오늘의 도시락" style="max-width: 850px; display:inline-block; text-align: center;">
+            <p><strong>대전에 위치한 산업지구의 년도별 사용 에너지를 시각적으로 확인할 수 있는 웹</strong> &nbsp;
+                <i class="fa-brands fa-youtube" onclick="window.location.href='https://youtu.be/aBKnELpp_vI'"></i>&nbsp;
+                <i class="fa-brands fa-github"></i>
+            </p>
+            
+            <br>
+            <strong>핵심 특징</strong>
+            <p><strong>전기와 가스 사용량, 그리고 그 석유 환산량</strong>을 <strong>두 가지의 차트</strong>로, 년과 월 기준으로 확인할 수 있게 했음</p>
+            <br>
+            <strong>힘들었던 점</strong>
+            <p>
+                차트를 만드는 것 자체는 어렵지 않았으나 원하는 형태로 수정하기 어려웠음
+                <br>
+                특히 내부 변수가 많아 원하는 부분을 찾아내고 수정하는데 오랜 시간이 소요됐으나, 차분하게 분석하여 원하는 결과를 얻어냄.
+            </p>
+            <br>
+            <a href="#bodyDiv">[주요 프로젝트]</a>  
+        </div>
+        
+        <br><br><br>
+        <div id="farmerDiv" style="text-align: center;">
+            <h2>모두가 농부</h2>
+            <img src="everyone.png" alt="오늘의 도시락" style="max-width: 850px; display:inline-block; text-align: center;">
+            <p><strong>도시농장 및 주말농장으로 생성된 잉여 생산물을 쉽게 거래할 수 있는 웹앱</strong></p>
+            <p>(진행중인 프로젝트로, 아직 마무리되지 않아 영상이 없습니다)</p>
+            <br>
+            <strong>핵심 특징</strong>
+            <p>
+                jwt와 전화번호 인증을 통해 안전하게 인증이 가능함
+                <br>
+                모델을 이용한 자동완성과 농작물 사진으로 건강상태를 파악 가능
+                <br>
+                개인채팅과 리뷰를 모두 확인가능
+            </p>
+            <strong>힘들었던 점</strong>
+            <p>
+                배운적 없는 방식인 jwt를 이해하고 사용하는데 오랜 시간이 소요됐음
+                <br>더불어 토큰의 저장 방식과 활용 방식에 대해 많이 고민했음
+            </p>
+            <br>
+            <a href="#bodyDiv">[주요 프로젝트]</a>
+        </div>
+    </div>
+
+   
+    <script>
+        const acc = document.getElementsByClassName("accordion");
+       
+
+        for (let i = 0; i < acc.length; i++) {
+            let currentText = acc[i].innerHTML;
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");  
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    acc[i].innerHTML = currentText.replace("⮝","⮟")
+                    //  = '<strong>⮟ 실패 예시</strong>';
+                } else {
+                    panel.style.display = "block"; 
+                    acc[i].innerHTML = currentText.replace("⮟","⮝")
+                    //  = '<strong>⮝ 실패 예시</strong>';
+                }
+            });
+        }
+    </script>
+
+
 </body>
 </html>
